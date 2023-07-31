@@ -1,63 +1,50 @@
- #Calculator#
+#Calculator#
+while True:
+   op =input( "Pls Choise Your OPration : + , - , * , / , sin , cos , tan , cot , ! , sqrt , exit :")
+   import math
+   num1=int(input("Enter num1 :"))
+   num2=int(input("Enter num2 :"))
+   if op=="+":
+      result=num1+num2
+   if op=="-":
+      result=num1-num2
+   if op=="*":
+      result=num1*num2
+   if op=="/":
+      if num2==0:
+         result="error!"
+      else:
+         result=num1/num2
 
-Opration=input("Choice Your Opration ( + , - , * , / , sin , cos , tan , cot , ! , sqrt : )")
-import math
+   if op=="sin":
+      num=int(input("Enter number :"))
+      result= math.sin(math.radians(num))
 
-if Opration=="+":
-    num1=int(input("Enter num1 :"))
-    num2=int(input("Enter num2 :"))
-    result=num1+num2
+   if op=="cos":
+      num=int(input("Enter number :"))
+      result= math.cos(math.radians(num))
 
-if Opration=="-":
-    num1=int(input("Enter num1 :"))
-    num2=int(input("Enter num2 :"))
-    result=num1-num2
+   if op=="tan":
+      num=int(input("Enter number :"))
+      result= math.tan(math.radians(num))
+      
+   if op=="cot":
+      num=int(input("Enter number :"))
+      if num==0:
+         result="error"
+      else:
+         result= 1/math.tan(math.radians(num))
 
-if Opration=="*":
-    num1=int(input("Enter num1 :"))
-    num2=int(input("Enter num2 :"))
-    result=num1*num2
+   if op=="!":
+       num=int(input("Enter number :"))
+       result=math.factorial(math.radians(num))
 
-if Opration=="/":
-    num1=int(input("Enter num1 :"))
-    num2=int(input("Enter num2 :"))
-    if num2==int("0"):
-        result="Error"
-    else:
-        result=num1/num2
+   if op=="sqrt":
+       num=int(input("ENter number :"))
+       if num==0:
+          result="error"
+       else:
+          result=math.sqrt(math.radians(num))
+   print(result)   
 
-
-
-if Opration=="sin":
-    num1=int(input("Enter num1 :"))
-    result=math.sin(num1)
-
-if Opration=="cos":
-    num1=int(input("Enter num1 :"))
-    result=math.cos(num1)
-        
-if Opration=="tan":
-    num1=int(input("Enter num1 :"))
-    result=math.tan(num1)
-        
-if Opration=="cot":
-    num1=int(input("Enter num1 :"))
-    x=math.tan(num1)
-    if x=="+":
-        result="Erorr "
-    else:
-        result=1/math.tan(num1)
-        
-if Opration=="!":
-    num1=int(input("Enter num1 :"))
-    result=math.factorial(num1)
-
-if Opration=="sqrt":
-    num1=int(input("Enter num1 :"))
-    result=math.sqrt(num1)
-        
-print(result)
-
-
-        
-
+    
