@@ -1,9 +1,10 @@
-#Tass Bendaz
+print("Wellcome To Tass Game Very Exciting Game Independed To Your Chance :) ")
+print("Rules : if u bring 6 u can roll again just this :) ")
 while True:
     
     import random as rn
-    Tass=str(input("Tasss Bendaz :)) >> Type 'Enter' "))
-    if Tass=="Enter":
+    Tass=str(input("Tasss Bendaz :)) >> Type 'Roll' "))
+    if Tass=="Roll":
         tass= rn.randint(1,6)
         print(tass)
         if tass==1:
