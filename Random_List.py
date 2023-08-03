@@ -1,4 +1,7 @@
-
+#Creat Random List
+print("                                          Wellcome                                       ")
+print(" Create A Random List With Random Numbers")
+print(" Created By 'Jey' ")
 import random
 myList=[]
 
