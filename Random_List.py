@@ -11,7 +11,7 @@ while True:
             my_list = list(set(random.sample(range(range1, range2), Numberoflist)))
 
             print(my_list)
-        else:
+        if Access==2:
               break
 
         
